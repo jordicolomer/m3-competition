@@ -12,6 +12,7 @@ for sheet in 'M3Year M3Quart M3Month M3Other'.split():
         train[series] = row[6:6+N-NF]
         test[series] = row[6+N-NF:6+N]
 
+print 'method,MAPE'
 M3Forecast = pd.ExcelFile('M3Forecast.xls')
 for sheet in M3Forecast.sheet_names:
     m = M3Forecast.parse(sheet, header=None).as_matrix()
@@ -26,7 +27,7 @@ for sheet in M3Forecast.sheet_names:
         n += 1
     print sheet, "%.1f" % (MAPE/n)
 
-for module_name in 'last'.split():
+for module_name in 'last ar'.split():
     predictor = __import__(module_name)
     MAPE = 0
     n = 0
