@@ -12,6 +12,8 @@ The following table reproduces table 6 (with forecasting horizon 1) from [1] for
 
 METHOD       |Average symmetric MAPE
 -------------|----
+**naive**     |11.6
+**ar**       |10.6
 NAIVE2       |10.5
 SINGLE       |9.5
 HOLT         |9.0
@@ -36,7 +38,5 @@ RBF          |9.9
 ForcX        |8.7
 AAM1         |9.8
 AAM2         |10.0
-**naive**     |11.6
-**ar**       |10.6
 
 [1] Makridakis, Spyros, and Michele Hibon. "The M3-Competition: results, conclusions and implications." International journal of forecasting 16.4 (2000): 451-476.
