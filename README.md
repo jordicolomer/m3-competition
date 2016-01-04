@@ -34,7 +34,7 @@ RBF          |9.9
 ForcX        |8.7
 AAM1         |9.8
 AAM2         |10.0
-last         |11.6
-ar           |10.6
+**last**     |11.6
+**ar**       |10.6
 
 [1] Makridakis, Spyros, and Michele Hibon. "The M3-Competition: results, conclusions and implications." International journal of forecasting 16.4 (2000): 451-476.
