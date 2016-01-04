@@ -6,7 +6,9 @@ See the paper [1] included in this repository for more details and results about
 
 Currently we test the following methods:
 - last: it just copies the last element of the series
-- ar: Univariate Autogressive Processes (statsmodels package implementation)
+- ar: Univariate Autogressive Processes (statsmodels Python package implementation)
+
+The following table reproduces table 6 (with forecasting horizon 1) from [1] for all the methods in the m3 competition in addition to our own methods (in bold).
 
 METHOD       |MAPE
 -------------|----
