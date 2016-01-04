@@ -10,7 +10,7 @@ Currently we test the following methods:
 
 The following table reproduces table 6 (with forecasting horizon 1) from [1] for all the methods in the m3 competition in addition to our own methods (in bold).
 
-METHOD       |MAPE
+METHOD       |Average symmetric MAPE
 -------------|----
 NAIVE2       |10.5
 SINGLE       |9.5
