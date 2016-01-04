@@ -27,11 +27,25 @@ for sheet in M3Forecast.sheet_names:
         n += 1
     print sheet, "%.1f" % (MAPE/n)
 
-for module_name in 'last ar'.split():
+import time
+updateprogressbar_start = None
+def updateprogressbar(now,end):
+	global updateprogressbar_start
+	if updateprogressbar_start == None:
+		updateprogressbar_start = time.time()
+	p = 1.*now/end
+	if p>0:
+		print 'progress',100.*now/end,(time.time()-updateprogressbar_start)*(1-p)/p/60/60,'hours'
+
+for module_name in 'naive ar nn'.split():
     predictor = __import__(module_name)
     MAPE = 0
     n = 0
+    le = len([series for series in train])
     for series in train:
+        print n,le
+        if module_name=='nn':
+            updateprogressbar(n,le)
         true = test[series]
         pred = predictor.predict(train[series], len(true))
         MAPE += abs(pred[0]-true[0])/((pred[0]+true[0])/2)*100

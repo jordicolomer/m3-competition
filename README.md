@@ -5,7 +5,7 @@ In this project we evaluate and compare a number of time-series forecasting meth
 See the paper [1] included in this repository for more details and results about the competition.
 
 Currently we test the following methods:
-- **last**: it just copies the last element of the series
+- **naive**: it just copies the last element of the series
 - **ar**: Univariate Autogressive Processes (statsmodels Python package implementation)
 
 The following table reproduces table 6 (with forecasting horizon 1) from [1] for all the methods in the m3 competition in addition to our own methods (in bold).
@@ -36,7 +36,7 @@ RBF          |9.9
 ForcX        |8.7
 AAM1         |9.8
 AAM2         |10.0
-**last**     |11.6
+**naive**     |11.6
 **ar**       |10.6
 
 [1] Makridakis, Spyros, and Michele Hibon. "The M3-Competition: results, conclusions and implications." International journal of forecasting 16.4 (2000): 451-476.
