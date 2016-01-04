@@ -1,4 +1,4 @@
-# m3-competition
+# Evaluation of time-series forecasting methods using the m3-competition as a benchmark
 
 In this project we evaluate and compare a number of time-series forecasting methods againt the well known m3 competition (https://en.wikipedia.org/wiki/Makridakis_Competitions)
 
